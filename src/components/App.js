@@ -165,6 +165,8 @@ const App = () => {
 	const scoreHandler = e => {
 		if (e.target.textContent === currChar.name) {
 			setScore(score + 1);
+		} else {
+			setScore(score - 1);
 		}
 		changeChar();
 	};
